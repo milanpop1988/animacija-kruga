@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.glavni-meni {
+    width: 100vw;
+    height: 100vh;
+    background: #050210;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.meni {
+    width: 70vw;
+    height: 70vh;
+    background: #050210;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prvi-krug {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient( #fb5dad, #55fb9f, #b97aff);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: animacija .9s linear infinite;
+}
+@keyframes animacija {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.drugi-krug {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: repeating-radial-gradient(#050210, white 30px);
+    border-radius: 50%;
+    animation-delay: animaciija .9s linear infinite;
+}
+@keyframes animaciija {
+    0% {
+        width: 250px;
+    }
+    33% {
+        width: 300px;
+    }
+    66% {
+        width: 325px;
+    }
+    100% {
+        width: 350px;
+    }
+}
